@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+list="$(find /usr/src/kernels -name "*.h" | xargs grep -i "magic" | wc -l)"
+echo "${list}"
